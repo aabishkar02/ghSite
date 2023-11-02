@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aabishkar Baral - Resume</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text */
+            padding: 20px;
+            position: relative;
+        }
+        .header-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #fff; /* White border */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .header-photo:hover {
+            transform: rotate(360deg);
+            box-shadow: 0 0 10px 2px #4285f4; /* Google Blue shadow on hover */
+        }
+        .header-name {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .header-location {
+            font-size: 20px;
+        }
+        .contact-info {
+            font-size: 18px;
+        }
+        .fa {
+            margin-right: 10px;
+        }
+        
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+        h1 {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #4285f4; /* Google Blue */
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+            font-family: 'Georgia', serif;
+        }
+        .bullet {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+        .contact-info {
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        a {
+            color: #4285f4; /* Google Blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <img class="header-photo" src="pfp.png" alt="Your Photo">
+        <h1 class="header-name">Aabishkar Baral</h1>
+        <p class="header-location">Arlington, Texas</p>
+        <p class="contact-info">
+            <i class="fa fa-phone"></i> +1 682-5600-133 | 
+            <i class="fa fa-envelope"></i> <a href="mailto:aabishkar.baral85@gmail.com">aabishkar.baral85@gmail.com</a> | 
+            <i class="fa fa-github"></i> <a href="https://github.com/aabishkar02" target="_blank">github.com/aabishkar02</a>
+        </p>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>Education</h2>
+            <p><strong>University of Texas at Arlington</strong><br>2022 - 2026 (Expected)<br>
+                Bachelor of Science in Computer Science<br>
+                Arlington, Texas</p>
+            <h3>Relevant Coursework</h3>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> Data Structures</li>
+                <li><img class="bullet" src="bullet.png"> Database Management</li>
+                <li><img class="bullet" src="bullet.png"> Artificial Intelligence (edX)</li>
+                <li><img class="bullet" src="bullet.png"> Internet Technology</li>
+                <li><img class="bullet" src="bullet.png"> Linear Programming</li>
+                <li><img class="bullet" src="bullet.png"> Computer Architecture</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <p><strong>IT Ed. Company</strong><br>May 2021 - August 2021<br>
+                Web Development Tutor<br>
+                Kathmandu, Nepal</p>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> Provided one-on-one web development tutoring sessions to individuals, focusing on HTML, CSS, JavaScript, and practical project development.</li>
+                <li><img class="bullet" src="bullet.png"> Assisted students in mastering essential web technologies and programming languages, ensuring a strong foundation in web development.</li>
+                <li><img class="bullet" src="bullet.png"> Created a supportive and engaging learning environment, resulting in improved web development skills and project success rates.</li>
+            </ul>
+            <p><strong>UTA</strong><br>Math Tutor<br>Arlington, Texas</p>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> Provided personalized calculus tutoring sessions, helping students grasp complex mathematical concepts and problem-solving techniques.</li>
+                <li><img class="bullet" src="bullet.png"> Collaborated with students pursuing computer science degrees to reinforce the importance of calculus in algorithm development and data analysis.</li>
+                <li><img class="bullet" src="bullet.png"> Enhanced students' mathematical foundation, which is fundamental for various computer science applications, including machine learning and data science.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <p><strong>Pizza-hut web replica</strong><br>January 2021<br>
+                HTML, CSS, Bootstrap, JavaScript</p>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> Led the development of a replica Pizza Hut website for a prestigious competition, showcasing strong project management and technical skills.</li>
+                <li><img class="bullet" src="bullet.png"> Implemented modern web development technologies and best practices to ensure the site's responsiveness and seamless user experience.</li>
+            </ul>
+            <p><strong>Movie Theatre</strong><br>January 2022<br>
+                C</p>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> Developed a custom C programming project for a movie theatre system at The University of Texas at Arlington, enabling seat bookings by specific zip codes.</li>
+                <li><img class="bullet" src="bullet.png"> Implemented a feature for generating tailored receipts, enhancing user experience and operational efficiency.</li>
+            </ul>
+            <p><strong>Library Management System</strong><br>October 2023<br>
+                Java, Swing</p>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> Successfully created a Library Management System using Swing and Menu-driven interfaces, providing an intuitive and user-friendly solution for efficient library operations.</li>
+                <li><img class="bullet" src="bullet.png"> Implemented a feature-rich Library Management System, streamlining book management, user registration, and transaction tracking for enhanced library operations.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><img class="bullet" src="bullet.png"> <strong>Languages:</strong> Java, C, HTML/CSS, JavaScript, Python, SQL</li>
+                <li><img class="bullet" src="bullet.png"> <strong>Developer Tools:</strong> VS Code, Eclipse, Google Cloud Platform, Android Studio</li>
+                <li><img class="bullet" src="bullet.png"> <strong>Technologies/Frameworks:</strong> Linux, Jenkins, GitHub, Angular, Swing, WordPress</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
+
